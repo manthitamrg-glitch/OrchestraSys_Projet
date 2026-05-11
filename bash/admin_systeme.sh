@@ -1,7 +1,10 @@
 #!/bin/bash
 echo "=== Gestion automatique des etudiants ==="
-mkdir -p etudiants/khadijetou
-mkdir -p etudiants/mama
-mkdir -p etudiants/ali
+for etudiant in khadijetou mama ali
+do
+    echo "Creation du dossier de $etudiant"
+    mkdir -p etudiants/$etudiant
+    touch etudiants/$etudiant/info.txt
+done
 chmod 700 etudiants/khadijetou
 echo "les dossiers etudiants ont ete crees avec succes."
