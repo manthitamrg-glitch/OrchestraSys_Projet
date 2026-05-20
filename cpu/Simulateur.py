@@ -7,7 +7,7 @@ processus = [
 temps_attente = 0
 temps_total = 0
 for nom, duree in processus:
-    print(f"{nom} s'exute pendant {duree} secondes")
+    print(f"{nom} s'execute pendant {duree} secondes")
     print(f"temps d'attente de {nom} : {temps_attente}")
     temps_total += duree
     temps_attente += duree
